@@ -248,7 +248,7 @@ class IncludeManager {
 						let snip = new RegExp(snipStr, "sm");
 
 						res = snip.exec(content);
-						let snippetStr = res && res.length > 1 ? res[1] : content
+						let snippetStr = res && res.length > 1 ? res[1] : content;
                         let snipCodeFence = "";
                         let snipCodeFenceEnd = "\n";
                         if (fileSupportOptions.addCodeBlock) {
