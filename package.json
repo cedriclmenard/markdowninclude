@@ -6,7 +6,7 @@
   "engines": {
     "vscode": "^1.76.0"
   },
-  "publisher": "DrewAvis - Updated By Cedric L Menard",
+  
   "repository": {"type":"git","url":"https://github.com/cedriclmenard/markdowninclude"},
   "homepage": "https://github.com/cedriclmenard/markdowninclude/blob/main/README.md",
   "license": "SEE LICENSE IN LICENSE.txt",
