@@ -34,6 +34,6 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./markdownsnippetinclude-1.0.0.vsix
-          asset_name: markdownsnippetinclude-1.0.0.vsix
+          asset_path: ./markdownsnippetinclude-clm-1.0.0.vsix
+          asset_name: markdownsnippetinclude-clm-1.0.0.vsix
           asset_content_type: application/xml
