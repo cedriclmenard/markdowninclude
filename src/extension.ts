@@ -248,28 +248,15 @@ class IncludeManager {
 						let snip = new RegExp(snipStr, "sm");
 
 						res = snip.exec(content);
-						if (res && res.length > 1) {
-							let snippetStr = res[1];
-							let snipCodeFence = "";
-							let snipCodeFenceEnd = "\n";
-							if (fileSupportOptions.addCodeBlock) {
-								snipCodeFence = '```' + ext.slice(1) + '\n';
-								snipCodeFenceEnd = '\n```\n';
-							}
-							// console.log(`snippet: ${snippetStr}`);
-							snipInfo.snippetContent = `${snipCodeFence}${snippetStr.trim()}${snipCodeFenceEnd}`;
-						}
-						else {
-							//  no snip name
-							probs.push({
-								code: '',
-								message: `snippet name ${snipName} not found in file: ${includePath}`,
-								severity: vscode.DiagnosticSeverity.Error,
-								source: 'Markdown Snippet',
-								range: new vscode.Range(new vscode.Position(linenum, 0), new vscode.Position(linenum, lineText.length))
-							});
-
-
+						let snippetStr = res && res.length > 1 ? res[1] : content
+                        let snipCodeFence = "";
+                        let snipCodeFenceEnd = "\n";
+                        if (fileSupportOptions.addCodeBlock) {
+                            snipCodeFence = '```' + ext.slice(1) + '\n';
+                            snipCodeFenceEnd = '\n```\n';
+                        }
+                        // console.log(`snippet: ${snippetStr}`);
+                        snipInfo.snippetContent = `${snipCodeFence}${snippetStr.trim()}${snipCodeFenceEnd}`;
 						}
 					}
 				}
