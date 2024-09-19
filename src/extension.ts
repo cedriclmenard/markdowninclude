@@ -257,10 +257,8 @@ class IncludeManager {
                         }
                         // console.log(`snippet: ${snippetStr}`);
                         snipInfo.snippetContent = `${snipCodeFence}${snippetStr.trim()}${snipCodeFenceEnd}`;
-						}
 					}
 				}
-
 			}
 			else if (this._includeEnd.test(lineText)) {
 				// we're at the end of a include section
