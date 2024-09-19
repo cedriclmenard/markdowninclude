@@ -28,12 +28,12 @@ jobs:
       - uses: lannonbr/vsce-action@4.0.0
         with:
           args: "package"
-      - name: upload GPX
+      - name: upload VSIX
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./markdowninclude.vsix
-          asset_name: markdowninclude.vsix
+          asset_path: ./markdownsnippetinclude-1.0.0.vsix
+          asset_name: markdownsnippetinclude-1.0.0.vsix
           asset_content_type: application/xml
