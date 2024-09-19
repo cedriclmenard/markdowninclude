@@ -1,18 +1,17 @@
 {
-  "name": "markdownsnippetinclude",
+  "name": "markdownsnippetinclude-clm",
   "displayName": "Markdown Snippet Include",
   "description": "Include snippets from other files in your markdown files",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.76.0"
   },
-  "publisher": "DrewAvis",
-  "repository": {"type":"git","url":"https://github.com/drewavis/markdowninclude"},
-  "homepage": "https://github.com/drewavis/markdowninclude/blob/main/README.md",
+  "publisher": "DrewAvis - Updated By Cedric L Menard",
+  "repository": {"type":"git","url":"https://github.com/cedriclmenard/markdowninclude"},
+  "homepage": "https://github.com/cedriclmenard/markdowninclude/blob/main/README.md",
   "license": "SEE LICENSE IN LICENSE.txt",
   "bugs": {
-    "url": "https://github.com/drewavis/markdowninclude/issues",
-    "email": "drew.avis@gmail.com"
+    "url": "https://github.com/cedriclmenard/markdowninclude/issues"
   },
   "categories": [
     "Other"
